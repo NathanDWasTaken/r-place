@@ -18,28 +18,31 @@ img = np.array(Image.open(img_file))
 chunk_size = 3
 
 
-output_img_size = (3000, 3000, 4)
+
+canvas_x, canvas_y = (2000, 1000)
+
+output_img_size = (canvas_y * chunk_size, canvas_x * chunk_size, 4)
 
 
 new_img = np.zeros(shape=output_img_size, dtype=np.uint8)
 
 
 # The start coords of the image (top left corner)
-start_coords = (960, 960)
+start_coords = (1559, 575)
 
 start_x, start_y = start_coords
 
 
-for x in range(img.shape[0]):
-    for y in range(img.shape[1]):
-        pixel = img[x, y]
+for y in range(img.shape[0]):
+    for x in range(img.shape[1]):
+        pixel = img[y, x]
 
         # Checks whether pixel is nothing or actually has some colour. If any of the 3 rgb values is non-zero, we don't skip (if all of the values are 0, we skip)
-        if not pixel[:3].any():
+        if not pixel.any():
             # Empty pixel, skip
             continue
 
-        new_img[(start_x + x) * chunk_size + 1, (start_y + y) * chunk_size + 1] = pixel
+        new_img[(start_y + y) * chunk_size + 1, (start_x + x) * chunk_size + 1] = pixel
 
 
 overlay_img = Image.fromarray(new_img)
