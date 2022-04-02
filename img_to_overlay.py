@@ -49,4 +49,4 @@ for y in range(img.shape[0]):
 
 overlay_img = Image.fromarray(new_img)
 
-overlay_img.save("overlay_img.png")
+overlay_img.save("billy_overlay.png")
