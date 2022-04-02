@@ -58,8 +58,7 @@ def add_sketch_to_overlay(overlay, sketch: Sketch):
 
 
 sketches = [
-    Sketch("billy.png", (1558, 574)),
-    Sketch("gg dani.png", (1557, 594))
+    Sketch("moderate sketch.png", (1549, 565)),
 ]
 
 
