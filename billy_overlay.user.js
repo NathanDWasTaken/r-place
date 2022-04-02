@@ -7,8 +7,8 @@
 // @overlay maintainer /u/irate_kalypso /r/starwars_place
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
-// @updateURL    https://github.com/iratekalypso/r-place-2022/raw/main/better_alliance_overlay.user.js
-// @downloadURL  https://github.com/iratekalypso/r-place-2022/raw/main/better_alliance_overlay.user.js
+// @updateURL    https://github.com/NathanDWasTaken/r-place/raw/main/billy_overlay.user.js
+// @downloadURL  https://github.com/NathanDWasTaken/r-place/raw/main/billy_overlay.user.js
 // @grant        none
 // ==/UserScript==
 if (window.top !== window.self) {
