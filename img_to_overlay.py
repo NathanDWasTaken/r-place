@@ -7,7 +7,7 @@ from PIL import Image
 import numpy as np
 
 # The start coords of the image (top left corner)
-start_coords = (1558, 575)
+start_coords = (1557, 574)
 
 
 canvas_x, canvas_y = (2000, 1000)
