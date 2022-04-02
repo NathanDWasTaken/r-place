@@ -6,6 +6,14 @@ The point of this program is to turn a normal image into an overlay image which 
 from PIL import Image
 import numpy as np
 
+# The start coords of the image (top left corner)
+start_coords = (1558, 575)
+
+
+canvas_x, canvas_y = (2000, 1000)
+
+
+
 
 img_file = "billy.png"
 
@@ -19,16 +27,10 @@ chunk_size = 3
 
 
 
-canvas_x, canvas_y = (2000, 1000)
-
 output_img_size = (canvas_y * chunk_size, canvas_x * chunk_size, 4)
-
 
 new_img = np.zeros(shape=output_img_size, dtype=np.uint8)
 
-
-# The start coords of the image (top left corner)
-start_coords = (1559, 575)
 
 start_x, start_y = start_coords
 
