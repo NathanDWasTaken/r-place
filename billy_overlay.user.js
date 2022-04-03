@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      3.1
 // @description  Keep the canvas beautiful!
-// @author       oralekin from osu! /r/osuplace
+// @author       EvilTaco 
 // @overlay maintainer /u/irate_kalypso /r/starwars_place
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
