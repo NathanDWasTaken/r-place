@@ -23,7 +23,7 @@ class Sketch:
 
 # Only thing you should have to change for a regular update
 sketches = [
-    Sketch("moderate sketch.png", (1549, 552)),
+    Sketch("Dani_face_place.png", (1578, 637)),
 ]
 
 
