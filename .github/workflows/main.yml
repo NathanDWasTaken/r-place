@@ -30,7 +30,10 @@ jobs:
           python-version: 3.10.4
       
       - name: Generate Image
-        run: python img_to_overlay.py
+        run: | 
+              pip install PIL
+              pip install numpy
+              python img_to_overlay.py
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
