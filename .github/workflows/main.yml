@@ -31,7 +31,7 @@ jobs:
       
       - name: Generate Image
         run: | 
-              pip install PIL
+              pip install Pillow
               pip install numpy
               python img_to_overlay.py
 
